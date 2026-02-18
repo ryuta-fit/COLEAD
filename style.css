@@ -1201,3 +1201,44 @@ span.pc-only {
 .nowrap {
     white-space: nowrap;
 }
+
+/* --- NEW: School Page Utilities --- */
+.section-alt {
+    background-color: #f0ede6;
+    /* Beige background matching Voice section */
+}
+
+.checklist-simple {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+.checklist-simple h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--accent);
+    font-size: 1.2rem;
+}
+
+.checklist-simple .checklist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    list-style: none;
+}
+
+.checklist-simple .checklist-grid li {
+    position: relative;
+    padding-left: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.checklist-simple .checklist-grid li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+}
