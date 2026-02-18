@@ -1166,4 +1166,38 @@ ul {
     .card-scroll-hint {
         display: block;
     }
+
+    /* Responsive Utilities (Mobile) */
+    .pc-only {
+        display: none !important;
+    }
+
+    .sp-only {
+        display: block !important;
+    }
+
+    span.sp-only {
+        display: inline !important;
+    }
+}
+
+/* Utilities (Desktop Default) */
+.pc-only {
+    display: block;
+}
+
+span.pc-only {
+    display: inline;
+}
+
+.sp-only {
+    display: none;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.nowrap {
+    white-space: nowrap;
 }
